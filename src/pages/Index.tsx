@@ -7,7 +7,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import CourseHeader from "@/components/CourseHeader";
 import CourseFeatures from "@/components/CourseFeatures";
-import CourseTestimonials from "@/components/CourseTestimonials";
 import CourseForm from "@/components/CourseForm";
 import { useState } from "react";
 
@@ -46,9 +45,6 @@ const Index = () => {
 
         {/* Особенности курса */}
         <CourseFeatures />
-
-        {/* Отзывы */}
-        <CourseTestimonials />
 
         {/* Форма записи */}
         <CourseForm />
