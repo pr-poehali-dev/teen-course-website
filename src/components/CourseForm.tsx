@@ -14,7 +14,8 @@ const CourseForm = () => {
     email: "",
     phone: "",
     parent: "",
-    experience: "",
+    interests: "",
+    schedule: "",
     message: ""
   });
   
@@ -25,8 +26,8 @@ const CourseForm = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleSelectChange = (value: string) => {
-    setFormData(prev => ({ ...prev, experience: value }));
+  const handleSelectChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
   };
   
   const handleSubmit = (e: React.FormEvent) => {
@@ -38,40 +39,40 @@ const CourseForm = () => {
 
   return (
     <section id="register" className="mb-16">
-      <h2 className="text-3xl font-bold mb-8 text-center text-violet-900">Записаться на бесплатный курс</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-violet-900">Записаться на бесплатную консультацию</h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
-          <h3 className="text-2xl font-bold mb-4 text-violet-900">Не упустите свой шанс!</h3>
+          <h3 className="text-2xl font-bold mb-4 text-violet-900">Как проходит консультация</h3>
           <p className="text-lg text-gray-700 mb-6">
-            Количество мест на бесплатном курсе ограничено. Заполните форму, и наш менеджер свяжется с вами в ближайшее время для подтверждения участия.
+            Наши менеджеры помогут подобрать варианты подработки, подходящие именно вам, учитывая ваш возраст, интересы и график.
           </p>
           
           <div className="mb-6">
-            <h4 className="text-xl font-semibold mb-3">Что вас ждет на курсе:</h4>
+            <h4 className="text-xl font-semibold mb-3">Что вы получите:</h4>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="inline-flex items-center justify-center bg-violet-100 text-violet-800 rounded-full h-6 w-6 text-sm mr-3 mt-0.5">1</span>
-                <span>8 занятий по 2 часа (всего 16 часов интенсивного обучения)</span>
+                <span>Индивидуальную консультацию с экспертом по трудоустройству</span>
               </li>
               <li className="flex items-start">
                 <span className="inline-flex items-center justify-center bg-violet-100 text-violet-800 rounded-full h-6 w-6 text-sm mr-3 mt-0.5">2</span>
-                <span>Практические задания после каждого занятия</span>
+                <span>Подборку вакансий, соответствующих вашим критериям</span>
               </li>
               <li className="flex items-start">
                 <span className="inline-flex items-center justify-center bg-violet-100 text-violet-800 rounded-full h-6 w-6 text-sm mr-3 mt-0.5">3</span>
-                <span>Создание собственного проекта к концу курса</span>
+                <span>Помощь в составлении резюме и подготовке к собеседованию</span>
               </li>
               <li className="flex items-start">
                 <span className="inline-flex items-center justify-center bg-violet-100 text-violet-800 rounded-full h-6 w-6 text-sm mr-3 mt-0.5">4</span>
-                <span>Сертификат о прохождении курса</span>
+                <span>Поддержку на всех этапах трудоустройства</span>
               </li>
             </ul>
           </div>
           
           <img 
             src="/placeholder.svg" 
-            alt="Программирование для подростков" 
+            alt="Консультация по подработке для подростков" 
             className="rounded-lg shadow-lg"
           />
         </div>
@@ -141,15 +142,33 @@ const CourseForm = () => {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="experience">Опыт в программировании</Label>
-                <Select onValueChange={handleSelectChange} value={formData.experience}>
+                <Label htmlFor="interests">Сфера интересов</Label>
+                <Select onValueChange={(value) => handleSelectChange("interests", value)} value={formData.interests}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Выберите уровень опыта" />
+                    <SelectValue placeholder="Выберите интересующую сферу" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="none">Нет опыта</SelectItem>
-                    <SelectItem value="basic">Начальный уровень</SelectItem>
-                    <SelectItem value="intermediate">Средний уровень</SelectItem>
+                    <SelectItem value="retail">Продажи/Retail</SelectItem>
+                    <SelectItem value="food">Общепит</SelectItem>
+                    <SelectItem value="delivery">Курьерская доставка</SelectItem>
+                    <SelectItem value="online">Онлайн-работа</SelectItem>
+                    <SelectItem value="events">Мероприятия/Промо</SelectItem>
+                    <SelectItem value="other">Другое</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              
+              <div className="space-y-2">
+                <Label htmlFor="schedule">Предпочтительный график</Label>
+                <Select onValueChange={(value) => handleSelectChange("schedule", value)} value={formData.schedule}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Выберите удобный график" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="weekends">Только выходные</SelectItem>
+                    <SelectItem value="evenings">Вечера в будни</SelectItem>
+                    <SelectItem value="flexible">Гибкий график</SelectItem>
+                    <SelectItem value="vacation">Только на каникулах</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -159,14 +178,14 @@ const CourseForm = () => {
                 <Textarea 
                   id="message" 
                   name="message" 
-                  placeholder="Расскажите о своих ожиданиях от курса или задайте вопрос" 
+                  placeholder="Расскажите о ваших ожиданиях или укажите другие пожелания" 
                   value={formData.message}
                   onChange={handleChange}
                 />
               </div>
               
               <Button type="submit" className="w-full bg-violet-600 hover:bg-violet-700">
-                Отправить заявку
+                Получить бесплатную консультацию
               </Button>
               
               <p className="text-sm text-gray-500 mt-2">
@@ -178,7 +197,7 @@ const CourseForm = () => {
               <div className="text-6xl mb-4">🎉</div>
               <h3 className="text-2xl font-bold mb-4 text-violet-900">Заявка успешно отправлена!</h3>
               <p className="text-lg text-gray-700 mb-6">
-                Спасибо за интерес к нашему курсу. Мы свяжемся с вами в ближайшее время для подтверждения участия.
+                Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время для проведения консультации и подбора вариантов подработки.
               </p>
               <Button 
                 onClick={() => setSubmitted(false)} 

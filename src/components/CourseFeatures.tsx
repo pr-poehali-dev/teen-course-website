@@ -1,34 +1,34 @@
 
 import { Card } from "@/components/ui/card";
-import { Code, Globe, Cpu, Users } from "lucide-react";
+import { DollarSign, Clock, ShieldCheck, Users } from "lucide-react";
 
 const CourseFeatures = () => {
   const features = [
     {
-      icon: <Code className="h-10 w-10 text-violet-600" />,
-      title: "Основы программирования",
-      description: "Изучение базовых принципов и концепций программирования на примере современных языков."
+      icon: <DollarSign className="h-10 w-10 text-violet-600" />,
+      title: "Достойный доход",
+      description: "Подберём варианты подработки с конкурентной оплатой, соответствующей возрасту и навыкам."
     },
     {
-      icon: <Globe className="h-10 w-10 text-violet-600" />,
-      title: "Веб-разработка",
-      description: "Создание собственных сайтов с использованием HTML, CSS и JavaScript."
+      icon: <Clock className="h-10 w-10 text-violet-600" />,
+      title: "Гибкий график",
+      description: "Работа, которая не помешает учёбе: вечером, в выходные или на каникулах."
     },
     {
-      icon: <Cpu className="h-10 w-10 text-violet-600" />,
-      title: "Основы алгоритмов",
-      description: "Решение интересных задач и построение эффективных алгоритмов."
+      icon: <ShieldCheck className="h-10 w-10 text-violet-600" />,
+      title: "Безопасность",
+      description: "Только проверенные работодатели, соблюдающие трудовое законодательство для несовершеннолетних."
     },
     {
       icon: <Users className="h-10 w-10 text-violet-600" />,
-      title: "Работа в команде",
-      description: "Развитие навыков коммуникации и совместной работы над проектами."
+      title: "Опыт работы",
+      description: "Первый официальный опыт работы, который можно добавить в резюме для будущей карьеры."
     }
   ];
 
   return (
     <section id="features" className="mb-16">
-      <h2 className="text-3xl font-bold mb-8 text-center text-violet-900">Чему вы научитесь</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-violet-900">Как мы поможем</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature, index) => (
@@ -46,28 +46,28 @@ const CourseFeatures = () => {
         <div>
           <img 
             src="/placeholder.svg" 
-            alt="Интерактивное обучение" 
+            alt="Подростки на подработке" 
             className="rounded-lg shadow-xl"
           />
         </div>
         <div>
-          <h3 className="text-2xl font-bold mb-4 text-violet-900">Курс для тех, кто хочет:</h3>
+          <h3 className="text-2xl font-bold mb-4 text-violet-900">Наш сервис для тех, кто хочет:</h3>
           <ul className="space-y-3">
             <li className="flex items-start">
               <span className="inline-flex items-center justify-center bg-violet-100 text-violet-800 rounded-full h-6 w-6 text-sm mr-3 mt-0.5">✓</span>
-              <span>Сделать первые шаги в программировании</span>
+              <span>Найти официальную подработку в свободное от учёбы время</span>
             </li>
             <li className="flex items-start">
               <span className="inline-flex items-center justify-center bg-violet-100 text-violet-800 rounded-full h-6 w-6 text-sm mr-3 mt-0.5">✓</span>
-              <span>Понять, интересна ли ему сфера IT</span>
+              <span>Начать зарабатывать первые собственные деньги</span>
             </li>
             <li className="flex items-start">
               <span className="inline-flex items-center justify-center bg-violet-100 text-violet-800 rounded-full h-6 w-6 text-sm mr-3 mt-0.5">✓</span>
-              <span>Развить логическое мышление</span>
+              <span>Получить ценный опыт работы для будущего резюме</span>
             </li>
             <li className="flex items-start">
               <span className="inline-flex items-center justify-center bg-violet-100 text-violet-800 rounded-full h-6 w-6 text-sm mr-3 mt-0.5">✓</span>
-              <span>Определиться с будущей профессией</span>
+              <span>Понять, какие профессии подходят именно вам</span>
             </li>
           </ul>
         </div>

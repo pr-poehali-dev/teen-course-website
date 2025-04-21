@@ -1,14 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import CourseHeader from "@/components/CourseHeader";
 import CourseFeatures from "@/components/CourseFeatures";
 import CourseForm from "@/components/CourseForm";
-import { useState } from "react";
 
 const Index = () => {
   return (
@@ -16,34 +12,35 @@ const Index = () => {
       <CourseHeader />
       
       <main className="container mx-auto px-4 py-8">
-        {/* Основная информация о курсе */}
+        {/* Основная информация о сервисе */}
         <section className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-4 text-violet-900">Старт в программировании для подростков</h2>
+              <h2 className="text-3xl font-bold mb-4 text-violet-900">Подработка для подростков от 14 до 18 лет</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Наш бесплатный курс разработан специально для молодых людей от 14 до 18 лет, 
-                которые хотят сделать первые шаги в мире программирования и технологий.
+                Наш сервис помогает подросткам найти официальную подработку с учётом возраста, 
+                интересов и графика учёбы. Мы проводим бесплатные консультации и помогаем 
+                подобрать лучшие варианты трудоустройства.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Никакого скучного теоретического материала — только 
-                интересные проекты и практические навыки, которые можно применить прямо сейчас!
+                Наши опытные менеджеры знают все тонкости трудоустройства несовершеннолетних 
+                и помогут найти работу, которая будет соответствовать вашим ожиданиям.
               </p>
               <Button className="bg-violet-600 hover:bg-violet-700 text-white">
-                Записаться на курс
+                Записаться на консультацию
               </Button>
             </div>
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
                 src="/placeholder.svg" 
-                alt="Подростки на курсе программирования" 
+                alt="Подростки на подработке" 
                 className="w-full h-auto object-cover"
               />
             </div>
           </div>
         </section>
 
-        {/* Особенности курса */}
+        {/* Особенности сервиса */}
         <CourseFeatures />
 
         {/* Форма записи */}
@@ -55,11 +52,11 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-bold mb-4">О нас</h3>
-              <p>Мы помогаем подросткам освоить современные IT-навыки с 2018 года.</p>
+              <p>Мы помогаем подросткам найти подходящую подработку с 2018 года.</p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Контакты</h3>
-              <p>Email: info@teencoding.ru</p>
+              <p>Email: info@teenwork.ru</p>
               <p>Телефон: +7 (999) 123-45-67</p>
             </div>
             <div>
@@ -68,7 +65,7 @@ const Index = () => {
             </div>
           </div>
           <Separator className="my-6 bg-violet-700" />
-          <p className="text-center">© 2023 Курсы программирования для подростков. Все права защищены.</p>
+          <p className="text-center">© 2023 Подработка для подростков TeenWork. Все права защищены.</p>
         </div>
       </footer>
     </div>
