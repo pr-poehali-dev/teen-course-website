@@ -6,264 +6,295 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeenWork - Подработка для подростков от 14 до 18 лет</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="container header-top">
-            <div class="logo">
-                <img src="logo.svg" alt="Логотип" class="logo-img">
-                <span class="logo-text">TeenWork</span>
+        <div class="container header-container">
+            <div class="header-nav">
+                <div class="logo">
+                    <img src="logo.svg" alt="Логотип TeenWork" class="logo-img">
+                    <span class="logo-text">TeenWork</span>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Главная</a>
+                    <a href="#features" class="nav-link">О сервисе</a>
+                    <a href="#register" class="nav-link">Консультация</a>
+                </nav>
+                <button class="btn btn-outline">Связаться с нами</button>
             </div>
-            <nav class="nav">
-                <a href="#" class="nav-link">Главная</a>
-                <a href="#features" class="nav-link">О сервисе</a>
-                <a href="#register" class="nav-link">Консультация</a>
-            </nav>
-            <button class="btn btn-outline">Связаться с нами</button>
-        </div>
-        
-        <div class="container header-content">
-            <h1 class="header-title">Подработка для подростков от 14 до 18 лет</h1>
-            <p class="header-description">
-                Получи бесплатную консультацию и найди идеальный вариант подработки с помощью наших менеджеров!
-            </p>
-            <button class="btn btn-primary btn-large">Бесплатная консультация</button>
+            
+            <div class="hero">
+                <h1 class="hero-title">Подработка для подростков от 14 до 18 лет</h1>
+                <p class="hero-desc">
+                    Получи бесплатную консультацию и найди идеальный вариант подработки с помощью наших менеджеров!
+                </p>
+                <button class="btn btn-primary btn-lg">Бесплатная консультация</button>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <!-- Основная информация о сервисе -->
-        <section class="section info-section">
-            <div class="grid-2">
-                <div>
-                    <h2 class="section-title">Подработка для подростков от 14 до 18 лет</h2>
-                    <p class="section-text">
-                        Наш сервис помогает подросткам найти официальную подработку с учётом возраста, 
-                        интересов и графика учёбы. Мы проводим бесплатные консультации и помогаем 
-                        подобрать лучшие варианты трудоустройства.
-                    </p>
-                    <p class="section-text">
-                        Наши опытные менеджеры знают все тонкости трудоустройства несовершеннолетних 
-                        и помогут найти работу, которая будет соответствовать вашим ожиданиям.
-                    </p>
-                    <button class="btn btn-secondary">Записаться на консультацию</button>
+    <main class="main">
+        <div class="container">
+            <!-- Основная информация о сервисе -->
+            <section class="section">
+                <div class="info-section">
+                    <div class="info-text">
+                        <h2 class="section-title">Подработка для подростков от 14 до 18 лет</h2>
+                        <p class="section-desc">
+                            Наш сервис помогает подросткам найти официальную подработку с учётом возраста, 
+                            интересов и графика учёбы. Мы проводим бесплатные консультации и помогаем 
+                            подобрать лучшие варианты трудоустройства.
+                        </p>
+                        <p class="section-desc">
+                            Наши опытные менеджеры знают все тонкости трудоустройства несовершеннолетних 
+                            и помогут найти работу, которая будет соответствовать вашим ожиданиям.
+                        </p>
+                        <button class="btn btn-primary">Записаться на консультацию</button>
+                    </div>
+                    <div class="info-image">
+                        <img src="placeholder.jpg" alt="Подростки на подработке" class="img-responsive">
+                    </div>
                 </div>
-                <div class="image-container">
-                    <img src="placeholder.jpg" alt="Подростки на подработке" class="info-image">
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Особенности сервиса -->
-        <section id="features" class="section features-section">
-            <h2 class="section-title center">Как мы поможем</h2>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+            <!-- Особенности сервиса -->
+            <section id="features" class="section">
+                <h2 class="section-title text-center">Как мы поможем</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3 class="feature-title">Достойный доход</h3>
+                        <p class="feature-desc">Подберём варианты подработки с конкурентной оплатой, соответствующей возрасту и навыкам.</p>
                     </div>
-                    <h3 class="feature-title">Достойный доход</h3>
-                    <p class="feature-description">Подберём варианты подработки с конкурентной оплатой, соответствующей возрасту и навыкам.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    <h3 class="feature-title">Гибкий график</h3>
-                    <p class="feature-description">Работа, которая не помешает учёбе: вечером, в выходные или на каникулах.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <h3 class="feature-title">Безопасность</h3>
-                    <p class="feature-description">Только проверенные работодатели, соблюдающие трудовое законодательство для несовершеннолетних.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <h3 class="feature-title">Опыт работы</h3>
-                    <p class="feature-description">Первый официальный опыт работы, который можно добавить в резюме для будущей карьеры.</p>
-                </div>
-            </div>
 
-            <div class="grid-2 advantages-block">
-                <div>
-                    <img src="placeholder.jpg" alt="Подростки на подработке" class="advantages-image">
-                </div>
-                <div>
-                    <h3 class="sub-title">Наш сервис для тех, кто хочет:</h3>
-                    <ul class="check-list">
-                        <li class="check-item">
-                            <span class="check-mark">✓</span>
-                            <span>Найти официальную подработку в свободное от учёбы время</span>
-                        </li>
-                        <li class="check-item">
-                            <span class="check-mark">✓</span>
-                            <span>Начать зарабатывать первые собственные деньги</span>
-                        </li>
-                        <li class="check-item">
-                            <span class="check-mark">✓</span>
-                            <span>Получить ценный опыт работы для будущего резюме</span>
-                        </li>
-                        <li class="check-item">
-                            <span class="check-mark">✓</span>
-                            <span>Понять, какие профессии подходят именно вам</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                    <div class="feature-card">
+                        <div class="feature-icon">🕒</div>
+                        <h3 class="feature-title">Гибкий график</h3>
+                        <p class="feature-desc">Работа, которая не помешает учёбе: вечером, в выходные или на каникулах.</p>
+                    </div>
 
-        <!-- Форма записи -->
-        <section id="register" class="section form-section">
-            <h2 class="section-title center">Записаться на бесплатную консультацию</h2>
-            
-            <div class="grid-2">
-                <div>
-                    <h3 class="sub-title">Как проходит консультация</h3>
-                    <p class="section-text">
-                        Наши менеджеры помогут подобрать варианты подработки, подходящие именно вам, 
-                        учитывая ваш возраст, интересы и график.
-                    </p>
-                    
-                    <div class="benefits-block">
-                        <h4 class="benefits-title">Что вы получите:</h4>
-                        <ul class="numbered-list">
-                            <li class="numbered-item">
-                                <span class="number">1</span>
-                                <span>Индивидуальную консультацию с экспертом по трудоустройству</span>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3 class="feature-title">Безопасность</h3>
+                        <p class="feature-desc">Только проверенные работодатели, соблюдающие трудовое законодательство для несовершеннолетних.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 class="feature-title">Опыт работы</h3>
+                        <p class="feature-desc">Первый официальный опыт работы, который можно добавить в резюме для будущей карьеры.</p>
+                    </div>
+                </div>
+
+                <div class="benefits-section">
+                    <div class="benefits-image">
+                        <img src="placeholder.jpg" alt="Подростки на подработке" class="img-responsive">
+                    </div>
+                    <div class="benefits-list">
+                        <h3 class="section-subtitle">Наш сервис для тех, кто хочет:</h3>
+                        <ul class="check-list">
+                            <li class="check-item">
+                                <span class="check-mark">✓</span>
+                                <span>Найти официальную подработку в свободное от учёбы время</span>
                             </li>
-                            <li class="numbered-item">
-                                <span class="number">2</span>
-                                <span>Подборку вакансий, соответствующих вашим критериям</span>
+                            <li class="check-item">
+                                <span class="check-mark">✓</span>
+                                <span>Начать зарабатывать первые собственные деньги</span>
                             </li>
-                            <li class="numbered-item">
-                                <span class="number">3</span>
-                                <span>Помощь в составлении резюме и подготовке к собеседованию</span>
+                            <li class="check-item">
+                                <span class="check-mark">✓</span>
+                                <span>Получить ценный опыт работы для будущего резюме</span>
                             </li>
-                            <li class="numbered-item">
-                                <span class="number">4</span>
-                                <span>Поддержку на всех этапах трудоустройства</span>
+                            <li class="check-item">
+                                <span class="check-mark">✓</span>
+                                <span>Понять, какие профессии подходят именно вам</span>
                             </li>
                         </ul>
                     </div>
-                    
-                    <img src="placeholder.jpg" alt="Консультация по подработке для подростков" class="consultation-image">
                 </div>
+            </section>
+
+            <!-- Форма записи -->
+            <section id="register" class="section">
+                <h2 class="section-title text-center">Записаться на бесплатную консультацию</h2>
                 
-                <div class="form-container">
-                    <form class="registration-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Имя и фамилия*</label>
-                            <input type="text" id="name" name="name" class="form-input" placeholder="Введите ваше имя и фамилию" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="age" class="form-label">Возраст*</label>
-                            <input type="text" id="age" name="age" class="form-input" placeholder="Укажите ваш возраст" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email*</label>
-                            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Телефон*</label>
-                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="parent" class="form-label">ФИО родителя/законного представителя*</label>
-                            <input type="text" id="parent" name="parent" class="form-input" placeholder="Для участников младше 18 лет" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="interests" class="form-label">Сфера интересов</label>
-                            <select id="interests" name="interests" class="form-select">
-                                <option value="" disabled selected>Выберите интересующую сферу</option>
-                                <option value="retail">Продажи/Retail</option>
-                                <option value="food">Общепит</option>
-                                <option value="delivery">Курьерская доставка</option>
-                                <option value="online">Онлайн-работа</option>
-                                <option value="events">Мероприятия/Промо</option>
-                                <option value="other">Другое</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="schedule" class="form-label">Предпочтительный график</label>
-                            <select id="schedule" name="schedule" class="form-select">
-                                <option value="" disabled selected>Выберите удобный график</option>
-                                <option value="weekends">Только выходные</option>
-                                <option value="evenings">Вечера в будни</option>
-                                <option value="flexible">Гибкий график</option>
-                                <option value="vacation">Только на каникулах</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" class="form-label">Дополнительная информация</label>
-                            <textarea id="message" name="message" class="form-textarea" placeholder="Расскажите о ваших ожиданиях или укажите другие пожелания"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-secondary btn-full">Получить бесплатную консультацию</button>
-                        
-                        <p class="form-disclaimer">
-                            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.
+                <div class="form-section">
+                    <div class="form-info">
+                        <h3 class="section-subtitle">Как проходит консультация</h3>
+                        <p class="section-desc">
+                            Наши менеджеры помогут подобрать варианты подработки, подходящие именно вам, учитывая ваш возраст, интересы и график.
                         </p>
-                    </form>
+                        
+                        <div class="form-benefits">
+                            <h4 class="form-benefits-title">Что вы получите:</h4>
+                            <ul class="numbered-list">
+                                <li class="numbered-item">
+                                    <span class="number">1</span>
+                                    <span>Индивидуальную консультацию с экспертом по трудоустройству</span>
+                                </li>
+                                <li class="numbered-item">
+                                    <span class="number">2</span>
+                                    <span>Подборку вакансий, соответствующих вашим критериям</span>
+                                </li>
+                                <li class="numbered-item">
+                                    <span class="number">3</span>
+                                    <span>Помощь в составлении резюме и подготовке к собеседованию</span>
+                                </li>
+                                <li class="numbered-item">
+                                    <span class="number">4</span>
+                                    <span>Поддержку на всех этапах трудоустройства</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <img src="placeholder.jpg" alt="Консультация по подработке для подростков" class="img-responsive">
+                    </div>
+                    
+                    <div class="form-card" id="application-form">
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Имя и фамилия*</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Введите ваше имя и фамилию" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="age" class="form-label">Возраст*</label>
+                                <input type="text" id="age" name="age" class="form-input" placeholder="Укажите ваш возраст" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Телефон*</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="parent" class="form-label">ФИО родителя/законного представителя*</label>
+                                <input type="text" id="parent" name="parent" class="form-input" placeholder="Для участников младше 18 лет" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="interests" class="form-label">Сфера интересов</label>
+                                <select id="interests" name="interests" class="form-select">
+                                    <option value="" disabled selected>Выберите интересующую сферу</option>
+                                    <option value="retail">Продажи/Retail</option>
+                                    <option value="food">Общепит</option>
+                                    <option value="delivery">Курьерская доставка</option>
+                                    <option value="online">Онлайн-работа</option>
+                                    <option value="events">Мероприятия/Промо</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="schedule" class="form-label">Предпочтительный график</label>
+                                <select id="schedule" name="schedule" class="form-select">
+                                    <option value="" disabled selected>Выберите удобный график</option>
+                                    <option value="weekends">Только выходные</option>
+                                    <option value="evenings">Вечера в будни</option>
+                                    <option value="flexible">Гибкий график</option>
+                                    <option value="vacation">Только на каникулах</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Дополнительная информация</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Расскажите о ваших ожиданиях или укажите другие пожелания"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Получить бесплатную консультацию</button>
+                            
+                            <p class="form-disclaimer">
+                                Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.
+                            </p>
+                        </form>
+
+                        <div class="form-success" id="success-message" style="display: none;">
+                            <div class="success-emoji">🎉</div>
+                            <h3 class="success-title">Заявка успешно отправлена!</h3>
+                            <p class="success-message">
+                                Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время для проведения консультации и подбора вариантов подработки.
+                            </p>
+                            <button class="btn btn-outline" id="new-application">Отправить еще одну заявку</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
+            <div class="footer-content">
+                <div class="footer-col">
                     <h3 class="footer-title">О нас</h3>
                     <p>Мы помогаем подросткам найти подходящую подработку с 2018 года.</p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-col">
                     <h3 class="footer-title">Контакты</h3>
                     <p>Email: info@teenwork.ru</p>
                     <p>Телефон: +7 (999) 123-45-67</p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-col">
                     <h3 class="footer-title">Адрес</h3>
                     <p>г. Москва, ул. Примерная, д. 123</p>
                 </div>
             </div>
-            <div class="footer-separator"></div>
+            <div class="footer-divider"></div>
             <p class="footer-copyright">© 2023 Подработка для подростков TeenWork. Все права защищены.</p>
         </div>
     </footer>
 
     <script>
-        // Простая валидация формы и показ благодарности
-        document.querySelector('.registration-form').addEventListener('submit', function(e) {
-            e.preventDefault();
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.form');
+            const successMessage = document.getElementById('success-message');
+            const applicationForm = document.getElementById('application-form');
+            const newApplicationBtn = document.getElementById('new-application');
             
-            // Тут можно добавить логику отправки данных на сервер
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Здесь был бы код отправки формы на сервер
+                    
+                    // Показываем сообщение об успехе
+                    form.style.display = 'none';
+                    successMessage.style.display = 'block';
+                });
+            }
             
-            // Показываем сообщение об успешной отправке
-            this.innerHTML = `
-                <div class="success-message">
-                    <div class="success-emoji">🎉</div>
-                    <h3 class="success-title">Заявка успешно отправлена!</h3>
-                    <p class="success-text">
-                        Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время для проведения 
-                        консультации и подбора вариантов подработки.
-                    </p>
-                    <button class="btn btn-outline" onclick="location.reload()">
-                        Отправить еще одну заявку
-                    </button>
-                </div>
-            `;
+            if (newApplicationBtn) {
+                newApplicationBtn.addEventListener('click', function() {
+                    form.style.display = 'block';
+                    successMessage.style.display = 'none';
+                    form.reset();
+                });
+            }
+            
+            // Плавная прокрутка для навигации
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#') && href.length > 1) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
         });
     </script>
 </body>
